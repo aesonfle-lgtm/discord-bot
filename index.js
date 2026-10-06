@@ -64,5 +64,7 @@ client.once("ready", async () => {
 });
 
 client.on("error", console.error);
+console.log("TOKEN VAR MI:", !!process.env.DISCORD_TOKEN);
+console.log("TOKEN UZUNLUGU:", process.env.DISCORD_TOKEN ? process.env.DISCORD_TOKEN.length : 0);
 
 client.login(TOKEN);
